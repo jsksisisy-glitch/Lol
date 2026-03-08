@@ -2,63 +2,68 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Para Ti</title>
+<title>Para Ti 🌸</title>
 
 <style>
 body{
-margin:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-font-family:Arial;
-background:linear-gradient(#ffc0cb,#d291ff);
-text-align:center;
-overflow:hidden;
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  font-family:Arial, sans-serif;
+  text-align:center;
+  overflow:hidden;
+
+  /* fondo personalizado */
+  background-image: url("fondo.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 h1{
-color:white;
-font-size:40px;
+  color:white;
+  font-size:42px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
 .ramo{
-width:250px;
-margin-top:20px;
-animation:flotar 3s infinite ease-in-out;
+  width:250px;
+  margin-top:15px;
+  animation:flotar 3s infinite ease-in-out;
 }
 
 /* animación de flotación */
 @keyframes flotar{
-0%{transform:translateY(0);}
-50%{transform:translateY(-15px);}
-100%{transform:translateY(0);}
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+  100%{transform:translateY(0);}
 }
 
 /* corazones flotando */
 .corazon{
-position:absolute;
-font-size:24px;
-color:#ff4da6;
-animation:subir 6s linear infinite;
+  position:absolute;
+  font-size:24px;
+  color:#ff4da6;
+  animation:subir 6s linear infinite;
 }
 
 @keyframes subir{
-0%{transform:translateY(100vh); opacity:1;}
-100%{transform:translateY(-10vh); opacity:0;}
+  0%{transform:translateY(100vh); opacity:1;}
+  100%{transform:translateY(-10vh); opacity:0;}
 }
 
 /* tulipanes sorpresa */
 .flor{
-position:absolute;
-font-size:28px;
-animation:caer 4s linear forwards;
+  position:absolute;
+  font-size:28px;
+  animation:caer 4s linear forwards;
 }
 
 @keyframes caer{
-0%{transform:translateY(-10vh);}
-100%{transform:translateY(110vh);}
+  0%{transform:translateY(-10vh);}
+  100%{transform:translateY(110vh);}
 }
 </style>
 </head>
@@ -72,8 +77,8 @@ animation:caer 4s linear forwards;
 <p>Un ramo de tulipanes para una persona especial 💜</p>
 
 <script>
-// texto letra por letra
-let texto = "🌷 Para Ti 🌷";
+// texto animado letra por letra
+let texto = "🌷Feliz dia,eres maravillosa en muchos aspectos,tus ojos grandes como girasoles y ricos como pistaches,amor viejo y sin duda EQYTQAT,te amo mujer y angel a la vez🌸";
 let i = 0;
 function escribir(){
   if(i < texto.length){
